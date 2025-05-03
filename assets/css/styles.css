@@ -1,0 +1,29 @@
+:root {
+    --blanco: white;
+    --negro: black;
+    /*paleta de colores*/
+    --llama: #EB5E28;
+    --negro-inquietante: #252422;
+    --aceituna-negra: #403D39 ;
+    --lobo-madera: #CCC5B9;
+    --blanco-floral: #FFFCF2;
+}
+
+body, * {
+    margin: 0 auto;
+}
+
+nav {
+    height: 100px;
+    border: 1px solid var(--llama);
+}
+
+section {
+    height: 2000px;
+    border: 1px solid var(--aceituna-negra);
+} 
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
