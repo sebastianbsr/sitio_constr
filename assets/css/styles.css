@@ -7,6 +7,8 @@
     --aceituna-negra: #403D39 ;
     --lobo-madera: #CCC5B9;
     --blanco-floral: #FFFCF2;
+
+    --fuentesecundaria: font-family: "Knewave", system-ui;
 }
 
 body, * {
@@ -97,7 +99,29 @@ li {
     text-align: center;
 }
 
+.container-item > h3 {
+    font-family: "Inter", sans-serif;
+}
+
 .image-radius {
     width: 240px;
     border-radius: 50%;
+    transition: .6s;
 }
+.image-radius:hover {
+    scale: 1.1;
+}
+
+.fa-house-chimney,
+.fa-helmet-safety {
+    color: var(--aceituna-negra);
+}
+.fa-star {
+    color: var(--aceituna-negra);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .fa-star:hover {
+    color: gold;
+    background-color: gold;
+  }
