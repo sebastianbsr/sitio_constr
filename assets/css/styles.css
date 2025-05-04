@@ -23,6 +23,10 @@ body, * {
 
 .container-logo {
     padding-left: 40px;
+    transition: .8s;
+}
+.container-logo:hover {
+    transform: rotate(360deg);
 }
 
 .container-navbar {
@@ -34,15 +38,66 @@ li {
 }
 .navbar > ul {
     list-style: none;
-    text-decoration: none;
     display: flex;
     justify-content: center;
     padding-top: 30px;
 }
 .navbar > ul > li > a {
     color: white;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
     padding-left: 60px;
+    transition: .2s;
 }
 .navbar >ul>li>a:hover {
     color: var(--llama);
+}
+.navbar >ul>li {
+    transition: .2s;
+}
+.navbar >ul>li:hover {
+    padding-top: -2px;
+}
+
+.container-principal {
+    margin: -1px;
+    padding: -1px;
+    height: 800px;
+    background-image: url(../images/Background_01.jpeg);
+    background-repeat: no no-repeat;
+    background-size: cover;
+    background-position: 66% 66%;
+    filter: blur(1px);
+}
+
+.help-opacity {
+    height: 800px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.container-secundario {
+    height: 700px;
+    background-color: var(--blanco-floral);
+}
+.titulo_h2 {
+    font-family: "Knewave", system-ui;
+    color: var(--llama);
+    padding-bottom: 80px;
+}
+
+.container-secundario_base {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+}
+.container-item {
+    text-align: center;
+}
+
+.image-radius {
+    width: 240px;
+    border-radius: 50%;
 }
